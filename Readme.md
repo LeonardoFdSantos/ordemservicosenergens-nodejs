@@ -62,43 +62,80 @@ PADRÃO DE ENTRADA
 DISPOSIÇÃO
 
 ### QUANTITATIVOS
+
 Módulos
+
 Inversor Monofásico 220 V
+
 Inversor Trifásico 380 V
+
 Monitoramento
+
 Módulo Optimizer
+
 Protetor surto CC
+
 Protetor surto CA
+
 Conector MC4
+
 Cabo CC (m)
+
 Disjuntor CA
+
 String Box CC
+
 Estrutura para telhado
+
 Estrutura para laje
+
 Estrutura para solo fixo
+
 Estrutura para garagem solar
+
 PERFIL LPL 0,55m WEG
+
 PERFIL PLANO
+
 PERFIL PLANO WEG
+
 KIT GRAMPO C/CHAPA INTERM UNIV 35/40mm
+
 GRAMPO FIX TERMINAL 35/40mm WEG
+
 GANCHO FIX C/ PARAFUSO CERAMICA
+
 GRAMPO FIX INTERMED
+
 GRAMPO FIX TERMINAL
+
 PARAFUSO AUTOBROCANTE
+
 FITA DUPLA FACE 30mmX2,5m
+
 GRAMPO FIX TERMINAL 35mm
+
 GRAMPO FIX TERMINAL 40mm
+
 GRAMPO FIX INTERMED 35/40mm
+
 GANCHO FIXAÇÃO ZIPADO
+
 PERFIL REFORÇADO
+
 CONEXAO INTERNA
+
 JUNÇÃO PARA PERFIL H WEG
+
 TRIANGULO 25° PSTRIANGVERTICAL
+
 TRIANGULO 25° PSTRIANGHORIZON
 PERFIL
+
 PERFIL UNIVERSAL TIPO H
+
 PARAFUSO DE FIXAÇÃO M10X250mm (madeira)
+
 PARAFUSO DE FIXAÇÃO M10X250mm (metálico)
 
 ## Tecnologia Utilizada
