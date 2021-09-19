@@ -11,54 +11,96 @@ Foi dividido em cada "Subproduto" do projeto em um fluxograma, qual todos precis
 ![Fluxograma Projeto Energens API](./FluxogramaAtividadesNovaOS.jpg)
 
 ### Dados Clientes
+
 Nome:
+
 Código UC:
+
 Localização:
+
 CEP:
+
 Bairro:
+
 E-mail:
+
 Telefone:
+
 CPF/CNPJ:
+
 Forma de Pagamento:
+
 Observações:
 
 ### Dados Consumidor
+
 Carga Instalada:
+
 Padrão:
+
 Tensão de Atendimento:
+
 Tipo de Conexão: [ ] Monofásico [ ] Bifásico [ ] Trifásico
+
 Potência Instalada:*
+
 Potência Módulos:
+
 Potência do(s) Inversor(es):
+
 N° de Arranjos:
 
+
 ### Documentação
+
 COPIA/2ª VIA DA CONTA:
+
 ART:
+
 ANEXO E:
+
 ANEXO G:
+
 PROCURAÇÃO:
+
 CONTRATO:
+
 CNH OU IDENTIDADE:
+
 CARTÃO CNPJ:
+
 CONTRATO SOCIAL:
+
 ANEXO I:
+
 ANEXO II:
+
 ANEXO IV:
 
+
 ### DOCUMENTOS PROJETO TÉCNICO
+
 Certidão de Registro Profissional
+
 ANEXO F
+
 MEMORIAL DESCRITIVO COM ANEXO
+
 PLANTAS 01,02,03
+
 REGISTRO INMETRO MÓDULOS
+
 REGISTRO INMETRO INVERSOR E EQUIVALÊNCIA
+
 *OBS: Menor carga no Caso da CPFL e Potência dos Módulos para Cermissões
 **OBS: Validar Assinaturas iguais aos documentos que irão para consessionária;
 
 ### FOTOS
+
 DISJUNTOR GERAL
+
 PADRÃO DE ENTRADA
+
 DISPOSIÇÃO
 
 ### QUANTITATIVOS
