@@ -20,6 +20,10 @@ db.sequelize = sequelize;
 
 db.clientes = require("./clientes.model.js")(sequelize, Sequelize);
 db.dadosConcessionarias = require("./dadosConcessionarias.models.js")(sequelize, Sequelize);
-db.dadosConcessionarias.hasMany(db.clientes);
+db.analiseTecnica = require("./analiseTecnica.model.js")(sequelize, Sequelize);
+db.analiseComercial = require("./analiseComercial.model.js")(sequelize, Sequelize);
+db.clientes.hasMany(db.dadosConcessionarias);
+db.clientes.hasMany(db.analiseTecnica);
+db.clientes.hasMany(db.analiseComercial);
 
 module.exports = db;
