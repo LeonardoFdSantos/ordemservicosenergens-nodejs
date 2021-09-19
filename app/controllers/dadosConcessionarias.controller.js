@@ -23,6 +23,7 @@ exports.create = (req, res) => {
         potenciaModulos: req.body.potenciaModulos,
         potenciaInversores: req.body.potenciaInversores,
         numeroArranjos: req.body.numeroArranjos,
+        clienteId: req.body.clienteId,
     };
 
     // Salvando os Dados Concessionárias no banco de dados

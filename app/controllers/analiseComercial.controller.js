@@ -15,6 +15,7 @@ exports.create = (req, res) => {
     // Criando dados do Dados Concessionária
     const respostaComercial = {
         respostaComercial: req.body.respostaComercial,
+        clienteId: req.body.clienteId,
     };
 
     // Salvando os Dados Concessionárias no banco de dados
