@@ -37,9 +37,11 @@ module.exports = (sequelize, Sequelize) => {
         },
         Notas:{
             type: Sequelize.TEXT,
-        },
-
-    });
+        }
+    }
+    ,{
+        timestamps: false,
+        });
   
     return Clientes;
   };
