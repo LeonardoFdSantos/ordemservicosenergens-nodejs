@@ -15,9 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
 const db = require("./app/models");
-db.sequelize.sync({force: true}).then(() => {
-    console.log("Drop and re-sync db.");
-});
+// db.sequelize.sync({force: true}).then(() => {console.log("Drop and re-sync db.");});
 
 app.get("/", (req, res)=> {
     res.json({message: "Welcome to Energens Aplication."});
@@ -25,6 +23,8 @@ app.get("/", (req, res)=> {
 
 require("./app/routes/clientes.routes")(app);
 require("./app/routes/dadosConcessionarias.routes")(app);
+require("./app/routes/analiseTecnica.routes")(app);
+require("./app/routes/analiseComercial.routes")(app);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
