@@ -43,10 +43,7 @@ exports.create = (req, res) => {
 
 // Trás todos os Clientes do banco de dados
 exports.findAll = (req, res) => {
-    const nome = req.query.Nome;
-    var condition = nome ? { Nome: { [Op.iLike]: `%${nome}%` } } : null;
-
-    Cliente.findAll({ where: condition})
+    Cliente.findAll({ where: {}})
         .then(data => {
             res.send({clientes: data});
         })
