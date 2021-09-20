@@ -31,7 +31,7 @@ exports.create = (req, res) => {
     // Salvando os Clientes no banco de dados
     Cliente.create(cliente)
         .then(data => {
-            res.send({cliente: data});
+            res.send(data);
         })
         .catch(err => {
             res.status(500).send({
@@ -45,7 +45,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     Cliente.findAll({ where: {}})
         .then(data => {
-            res.send({clientes: data});
+            res.send({ clientes: data });
         })
         .catch(err => {
             res.status(500).send({
@@ -61,7 +61,7 @@ exports.findOne = (req, res) => {
 
     Cliente.findByPk(id)
         .then(data => {
-            res.send(data);
+            res.send({ cliente: data});
         })
         .catch(err =>{
             res.status(500).send({

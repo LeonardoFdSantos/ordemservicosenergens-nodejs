@@ -35,7 +35,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     analiseTecnica.findAll({ where: {} })
         .then(data => {
-            res.send({tecnica: data});
+            res.send({ tecnicas: data });
         })
         .catch(err => {
             res.status(500).send({
@@ -51,7 +51,7 @@ exports.findOne = (req, res) => {
 
     analiseTecnica.findByPk(id)
         .then(data => {
-            res.send(data);
+            res.send({ tecnica: data });
         })
         .catch(err =>{
             res.status(500).send({
