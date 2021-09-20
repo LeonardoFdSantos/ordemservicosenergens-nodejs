@@ -43,7 +43,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     dadosConcessionarias.findAll({ where: {} })
         .then(data => {
-            res.send({ concessionarias: data });
+            res.json({ concessionarias: data });
         })
         .catch(err => {
             res.status(500).send({
@@ -59,7 +59,7 @@ exports.findOne = (req, res) => {
 
     dadosConcessionarias.findByPk(id)
         .then(data => {
-            res.send({ concessionaria: data });
+            res.json({ concessionaria: data });
         })
         .catch(err =>{
             res.status(500).send({

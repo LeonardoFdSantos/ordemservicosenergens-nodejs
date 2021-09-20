@@ -35,7 +35,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     analiseComercial.findAll({ where: {} })
         .then(data => {
-            res.send({ comerciais: data });
+            res.json({ comerciais: data });
         })
         .catch(err => {
             res.status(500).send({
@@ -51,7 +51,7 @@ exports.findOne = (req, res) => {
 
     analiseComercial.findByPk(id)
         .then(data => {
-            res.send({ comercial: data });
+            res.json({ comercial: data });
         })
         .catch(err =>{
             res.status(500).send({

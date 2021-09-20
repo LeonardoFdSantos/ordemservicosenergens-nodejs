@@ -4,12 +4,15 @@ const cors = require("cors");
 
 const app = express();
 
-var corsOptions = {
-    //"http://localhost:8081"
-    origin: "*"
-}
+app.use(cors());
 
-app.use(cors(corsOptions));
+app.use(function (req, res, next) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader('Access-Control-Allow-Methods', '*');
+    res.setHeader("Access-Control-Allow-Headers", "*");
+    next();
+});
+
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true}));
