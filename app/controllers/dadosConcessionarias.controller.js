@@ -14,7 +14,7 @@ exports.create = (req, res) => {
         return;
     }
     // Criando dados do Dados Concessionária
-    const dadosConcessionarias = {
+    const dados = {
         cargaInstala: req.body.cargaInstala, 
         padraoEntrada: req.body.padraoEntrada,
         tensaoAtendimento: req.body.tensaoAtendimento,
@@ -23,11 +23,11 @@ exports.create = (req, res) => {
         potenciaModulos: req.body.potenciaModulos,
         potenciaInversores: req.body.potenciaInversores,
         numeroArranjos: req.body.numeroArranjos,
-        clienteId: req.body.clienteId,
+        clienteId: req.body.clienteId
     };
 
     // Salvando os Dados Concessionárias no banco de dados
-    dadosConcessionarias.create(dadosConcessionarias)
+    dadosConcessionarias.create(dados)
         .then(data => {
             res.send(data);
         })

@@ -6,20 +6,20 @@ const Op = db.Sequelize.Op;
 // Criar e Salvar um novo Dados Concessionária
 exports.create = (req, res) => {
     // validar o Request
-    if (!req.body.analiseTecnica ){
+    if (!req.body.respostaTecnica ){
         res.status(400).send({
             message: "Não pode ficar vazio!"
         });
         return;
     }
     // Criando dados do Dados Concessionária
-    const respostaTecnica = {
+    const tecnica = {
         respostaTecnica: req.body.respostaTecnica,
-        clienteId: req.body.clienteId,
+        clienteId: req.body.clienteId
     };
 
     // Salvando os Dados Concessionárias no banco de dados
-    analiseTecnica.create(respostaTecnica)
+    analiseTecnica.create(tecnica)
         .then(data => {
             res.send(data);
         })
