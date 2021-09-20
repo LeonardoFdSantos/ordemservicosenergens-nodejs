@@ -43,7 +43,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     dadosConcessionarias.findAll({ where: {} })
         .then(data => {
-            res.send(data);
+            res.send({concessionarias: data});
         })
         .catch(err => {
             res.status(500).send({

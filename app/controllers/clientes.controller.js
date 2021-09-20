@@ -31,7 +31,7 @@ exports.create = (req, res) => {
     // Salvando os Clientes no banco de dados
     Cliente.create(cliente)
         .then(data => {
-            res.send(data);
+            res.send({cliente: data});
         })
         .catch(err => {
             res.status(500).send({

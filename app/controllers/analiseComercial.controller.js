@@ -35,7 +35,7 @@ exports.create = (req, res) => {
 exports.findAll = (req, res) => {
     analiseComercial.findAll({ where: {} })
         .then(data => {
-            res.send(data);
+            res.send({comercial: data});
         })
         .catch(err => {
             res.status(500).send({
