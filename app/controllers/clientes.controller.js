@@ -48,7 +48,7 @@ exports.findAll = (req, res) => {
 
     Cliente.findAll({ where: condition})
         .then(data => {
-            res.send(data);
+            res.send({clientes: data});
         })
         .catch(err => {
             res.status(500).send({
